@@ -44,7 +44,7 @@ if [ ! -f Makefile ]; then
     cat > Makefile <<EOF
 .DEFAULT_GOAL := setup
 
-setup: main.go
+setup:
 	mkdir -p bin
 	go mod init $module_name
 
